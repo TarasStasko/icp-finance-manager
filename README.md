@@ -1,65 +1,67 @@
-# 💰 Персональний Фінансовий Менеджер
+# 💰 Personal Finance Manager
 
-**Децентралізований додаток** для ведення обліку особистих фінансів.
+**A decentralized application** for tracking personal finances.
 
-## Основні функції
+## Key Features
 
-- ➕ Додавання транзакцій (доходи та витрати)
-- 📊 Перегляд поточного балансу
-- 📅 Історія всіх операцій
-- 🔄 Скидання фінансової статистики
-- 🔐 Зберігання даних на блокчейні
+- ➕ Add transactions (income & expenses)
+- 📊 View current balance
+- 📅 Full transaction history
+- 🔄 Reset financial statistics
+- 🔐 Blockchain data storage
 
-## Технологічний стек
+## Technology Stack
 
-**Клієнтська частина:**
+**Client-side:**
 - React.js
-- Vite (збірка)
-- lit-html (шаблонізація)
-- SCSS (стилі)
+- Vite (build tool)
+- lit-html (templating)
+- SCSS (styling)
 
-**Серверна частина:**
-- Мова програмування Motoko
+**Server-side:**
+- Motoko programming language
 - Internet Computer Protocol
 - DFX SDK
 
-## Архітектура
+## Architecture
 
-Додаток складається з:
-1. **Фронтенд** - інтерфейс користувача
-- Ключові файли:
-- App.js – головний компонент
-- main.js – точка входу
-- index.html – базовий шаблон
-2. **Бекенд-каністер** - логіка роботи з даними
-- ain.mo – ядро логіки
-- dfx.json – конфігурація
-3. **Інтерфейси взаємодії** (DID-файли)
-  
-Автоматично генеруються при деплої
+The application consists of:
+1. **Frontend** - User interface
+   - Key files:
+   - App.js - Main component
+   - main.js - Entry point
+   - index.html - Base template
 
-Як це працює:
+2. **Backend Canister** - Data logic
+   - main.mo - Core logic
+   - dfx.json - Configuration
 
-Після dfx deploy створюються:
+3. **Interaction Interfaces** (DID files)
+   Automatically generated during deployment
 
-- .did – CIDL-інтерфейс
-- .did.js – JS-адаптер для фронтенду
-- .d.ts – TypeScript-типи
+How it works:
 
-### 1. Встановіть необхідні інструменти
+After `dfx deploy`, these files are generated:
+- .did - CIDL interface
+- .did.js - JS adapter for frontend
+- .d.ts - TypeScript types
+
+## Installation Guide
+
+### 1. Install required tools
 ```sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"```
 
-### 2. Клонуйте та підготуйте проект
+### 2. Clone and prepare the project
 ```git clone https://github.com/yourusername/finance-app-ic.git```
 
 ```cd finance-app-ic```
 
 ```npm install```
 
-### 3. Запустіть локальну мережу
+### 3. Start local network
 ```dfx start --background --clean```
 
-### 4. Деплойть додаток
+### 4. Deploy the application
 ```dfx deploy```
 
 ```npm run dev```
