@@ -1,0 +1,19 @@
+type Transaction = 
+ record {
+   amount: float64;
+   category: text;
+   date: text;
+   id: nat;
+   isExpense: bool;
+   userId: text;
+ };
+service : {
+  addTransaction: (float64, text, bool) -> (text);
+  deleteTransaction: (nat) -> (bool);
+  getBalance: () -> (float64) query;
+  getTotalExpenses: () -> (float64) query;
+  getTotalIncome: () -> (float64) query;
+  getTransactions: () -> (vec Transaction) query;
+  resetTotalExpenses: () -> ();
+  resetTotalIncome: () -> ();
+}
