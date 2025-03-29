@@ -45,3 +45,16 @@
 - .did – CIDL-інтерфейс
 - .did.js – JS-адаптер для фронтенду
 - .d.ts – TypeScript-типи
+
+### 1. Встановіть необхідні інструменти
+# DFX (Internet Computer SDK)
+sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+
+# Node.js (LTS версія)
+nvm install --lts
+nvm use --lts
+
+### 2. Клонуйте та підготуйте проект
+git clone https://github.com/yourusername/finance-app-ic.git
+cd finance-app-ic
+npm install
