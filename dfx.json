@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "finance_app_backend": {
+      "main": "src/finance_app_backend/main.mo",
+      "type": "motoko"
+    },
+    "finance_app_frontend": {
+      "dependencies": [
+        "finance_app_backend"
+      ],
+      "source": [
+        "src/finance_app_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "finance_app_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
