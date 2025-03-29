@@ -47,7 +47,6 @@
 - .d.ts – TypeScript-типи
 
 ### 1. Встановіть необхідні інструменти
-# DFX (Internet Computer SDK)
 ```sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"```
 
 ### 2. Клонуйте та підготуйте проект
